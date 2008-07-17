@@ -1,4 +1,4 @@
-# $Header: /space/home/eng/cjm/cvs/libdprt-grope/c/Makefile,v 1.1 2007-02-22 18:58:30 cjm Exp $
+# $Header: /space/home/eng/cjm/cvs/libdprt-grope/c/Makefile,v 1.2 2008-07-17 10:50:32 cjm Exp $
 
 include	../../../Makefile.common
 include	../../Makefile.common
@@ -53,10 +53,10 @@ checkin:
 	-(cd $(INCDIR); $(CI) $(CI_OPTIONS) dprt.h;)
 
 staticdepend:
-	makedepend -p$(BINDIR)/ -- $(CFLAGS)  -- $(SRCS)
+	makedepend $(MAKEDEPENDFLAGS) -p$(BINDIR)/ -- $(CFLAGS)  -- $(SRCS)
 
 depend:
-	makedepend -p$(BINDIR)/ -- $(CFLAGS)  -- $(SRCS)
+	makedepend $(MAKEDEPENDFLAGS) -p$(BINDIR)/ -- $(CFLAGS)  -- $(SRCS)
 
 lint:
 	$(LINT)	$(LINTFLAGS) $(SRCS)
@@ -74,6 +74,62 @@ backup: tidy
 
 #
 # $Log: not supported by cvs2svn $
+# Revision 1.1  2007/02/22 18:58:30  cjm
+# Initial revision
+#
 #
 
 # DO NOT DELETE
+
+/home/dev/bin/libdprt/grope/c/i386-linux/dprt.o: /usr/include/stdio.h
+/home/dev/bin/libdprt/grope/c/i386-linux/dprt.o: /usr/include/features.h
+/home/dev/bin/libdprt/grope/c/i386-linux/dprt.o: /usr/include/sys/cdefs.h
+/home/dev/bin/libdprt/grope/c/i386-linux/dprt.o: /usr/include/gnu/stubs.h
+/home/dev/bin/libdprt/grope/c/i386-linux/dprt.o: /usr/lib/gcc-lib/i386-redhat-linux/3.2.2/include/stddef.h
+/home/dev/bin/libdprt/grope/c/i386-linux/dprt.o: /usr/include/bits/types.h
+/home/dev/bin/libdprt/grope/c/i386-linux/dprt.o: /usr/include/bits/wordsize.h
+/home/dev/bin/libdprt/grope/c/i386-linux/dprt.o: /usr/include/bits/typesizes.h
+/home/dev/bin/libdprt/grope/c/i386-linux/dprt.o: /usr/include/libio.h
+/home/dev/bin/libdprt/grope/c/i386-linux/dprt.o: /usr/include/_G_config.h
+/home/dev/bin/libdprt/grope/c/i386-linux/dprt.o: /usr/include/wchar.h
+/home/dev/bin/libdprt/grope/c/i386-linux/dprt.o: /usr/include/bits/wchar.h
+/home/dev/bin/libdprt/grope/c/i386-linux/dprt.o: /usr/include/gconv.h
+/home/dev/bin/libdprt/grope/c/i386-linux/dprt.o: /usr/lib/gcc-lib/i386-redhat-linux/3.2.2/include/stdarg.h
+/home/dev/bin/libdprt/grope/c/i386-linux/dprt.o: /usr/include/bits/stdio_lim.h
+/home/dev/bin/libdprt/grope/c/i386-linux/dprt.o: /usr/include/bits/sys_errlist.h
+/home/dev/bin/libdprt/grope/c/i386-linux/dprt.o: /usr/include/stdlib.h
+/home/dev/bin/libdprt/grope/c/i386-linux/dprt.o: /usr/include/string.h
+/home/dev/bin/libdprt/grope/c/i386-linux/dprt.o: /usr/include/math.h
+/home/dev/bin/libdprt/grope/c/i386-linux/dprt.o: /usr/include/bits/huge_val.h
+/home/dev/bin/libdprt/grope/c/i386-linux/dprt.o: /usr/include/bits/mathdef.h
+/home/dev/bin/libdprt/grope/c/i386-linux/dprt.o: /usr/include/bits/mathcalls.h
+/home/dev/bin/libdprt/grope/c/i386-linux/dprt.o: /home/dev/src/cfitsio3.006/include/fitsio.h
+/home/dev/bin/libdprt/grope/c/i386-linux/dprt.o: /usr/include/limits.h
+/home/dev/bin/libdprt/grope/c/i386-linux/dprt.o: /usr/lib/gcc-lib/i386-redhat-linux/3.2.2/include/limits.h
+/home/dev/bin/libdprt/grope/c/i386-linux/dprt.o: /home/dev/src/cfitsio3.006/include/longnam.h
+/home/dev/bin/libdprt/grope/c/i386-linux/dprt.o: /home/dev/src/libdprt/jni_general/include/dprt_jni_general.h
+/home/dev/bin/libdprt/grope/c/i386-linux/dprt.o: /usr/java/j2sdk1.4.2_06/include/jni.h
+/home/dev/bin/libdprt/grope/c/i386-linux/dprt.o: /usr/java/j2sdk1.4.2_06/include/linux/jni_md.h
+/home/dev/bin/libdprt/grope/c/i386-linux/dprt.o: /home/dev/src/libdprt/grope/include/dprt.h
+/home/dev/bin/libdprt/grope/c/i386-linux/ngat_dprt_grope_DpRtLibrary.o: /usr/include/stdio.h
+/home/dev/bin/libdprt/grope/c/i386-linux/ngat_dprt_grope_DpRtLibrary.o: /usr/include/features.h
+/home/dev/bin/libdprt/grope/c/i386-linux/ngat_dprt_grope_DpRtLibrary.o: /usr/include/sys/cdefs.h
+/home/dev/bin/libdprt/grope/c/i386-linux/ngat_dprt_grope_DpRtLibrary.o: /usr/include/gnu/stubs.h
+/home/dev/bin/libdprt/grope/c/i386-linux/ngat_dprt_grope_DpRtLibrary.o: /usr/lib/gcc-lib/i386-redhat-linux/3.2.2/include/stddef.h
+/home/dev/bin/libdprt/grope/c/i386-linux/ngat_dprt_grope_DpRtLibrary.o: /usr/include/bits/types.h
+/home/dev/bin/libdprt/grope/c/i386-linux/ngat_dprt_grope_DpRtLibrary.o: /usr/include/bits/wordsize.h
+/home/dev/bin/libdprt/grope/c/i386-linux/ngat_dprt_grope_DpRtLibrary.o: /usr/include/bits/typesizes.h
+/home/dev/bin/libdprt/grope/c/i386-linux/ngat_dprt_grope_DpRtLibrary.o: /usr/include/libio.h
+/home/dev/bin/libdprt/grope/c/i386-linux/ngat_dprt_grope_DpRtLibrary.o: /usr/include/_G_config.h
+/home/dev/bin/libdprt/grope/c/i386-linux/ngat_dprt_grope_DpRtLibrary.o: /usr/include/wchar.h
+/home/dev/bin/libdprt/grope/c/i386-linux/ngat_dprt_grope_DpRtLibrary.o: /usr/include/bits/wchar.h
+/home/dev/bin/libdprt/grope/c/i386-linux/ngat_dprt_grope_DpRtLibrary.o: /usr/include/gconv.h
+/home/dev/bin/libdprt/grope/c/i386-linux/ngat_dprt_grope_DpRtLibrary.o: /usr/lib/gcc-lib/i386-redhat-linux/3.2.2/include/stdarg.h
+/home/dev/bin/libdprt/grope/c/i386-linux/ngat_dprt_grope_DpRtLibrary.o: /usr/include/bits/stdio_lim.h
+/home/dev/bin/libdprt/grope/c/i386-linux/ngat_dprt_grope_DpRtLibrary.o: /usr/include/bits/sys_errlist.h
+/home/dev/bin/libdprt/grope/c/i386-linux/ngat_dprt_grope_DpRtLibrary.o: /usr/include/stdlib.h
+/home/dev/bin/libdprt/grope/c/i386-linux/ngat_dprt_grope_DpRtLibrary.o: /usr/include/string.h
+/home/dev/bin/libdprt/grope/c/i386-linux/ngat_dprt_grope_DpRtLibrary.o: /usr/java/j2sdk1.4.2_06/include/jni.h
+/home/dev/bin/libdprt/grope/c/i386-linux/ngat_dprt_grope_DpRtLibrary.o: /usr/java/j2sdk1.4.2_06/include/linux/jni_md.h
+/home/dev/bin/libdprt/grope/c/i386-linux/ngat_dprt_grope_DpRtLibrary.o: /home/dev/src/libdprt/grope/include/dprt.h
+/home/dev/bin/libdprt/grope/c/i386-linux/ngat_dprt_grope_DpRtLibrary.o: /home/dev/src/libdprt/jni_general/include/dprt_jni_general.h
